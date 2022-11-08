@@ -1,14 +1,14 @@
 import * as S from './styles'
 export type LogoProps = {
   color?: 'black' | 'white'
+  size?: 'large' | 'normal'
 }
-const Logo = ({ color = 'white' }: LogoProps) => (
-  <S.Wrapper color={color}>
+const Logo = ({ color = 'white', size = 'normal' }: LogoProps) => (
+  <S.Wrapper color={color} size={size}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="158"
-      height="48"
       fill="none"
+      viewBox="0 0 158 48"
       role="img"
       aria-label="Won Games"
     >
